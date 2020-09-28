@@ -1,7 +1,7 @@
 public class SumAndAverage {
 
     public static void main(String arg[]) {
-        double[] values = {1.2, 7.3, 3.14, 42.0,};
+        double[] values = {1.2, 7.3, 3.14, 42.0};
         double total = 0;
 
         for (double value : values ){

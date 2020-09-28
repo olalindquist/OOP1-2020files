@@ -11,7 +11,7 @@ public class MaxAndMin {
                 largest = value;
             }
 
-            if (smallest<smallest){
+            if (value<smallest){
                 smallest =value;
             }
 
