@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ArrayCopy {
 
-    public static void main (String args[]){
+    public static void main (String[] args){
 
                 int[] myArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
                 int[] copy = Arrays.copyOf(myArray, myArray.length);
