@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Car {
     /*
     Instansvariabler. Dvs (i någon mening) de variabler som definierar vårt objekt
@@ -9,16 +11,22 @@ private String color;
 private int year;
 private int price;
 private String id;
+    private static ArrayList<String> idList= new ArrayList<String>();
 /*
 Konstruktorn är en funktion utan returtyp och samma namn som klassen.
 
  */
 public Car(String model, String color, int year, int price, String id){
+    if (this.idList.contains(id)){
+        System.out.println("Warning! Allreade created car with this id!");
+        id +="(Duplicate)";
+    }
     this.model = model;
     this.color = color;
     this.year = year;
     this.price = price;
-this.id = id;
+    this.id = id;
+    this.idList.add(id);
 }
 
 public String getId(){
